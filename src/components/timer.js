@@ -8,10 +8,8 @@ const Timer = () => {
   };
 
   useEffect(() => {
-    console.log("update");
     const add = setInterval(tick, 1000);
     return () => {
-      console.log("remove");
       clearInterval(add);
     };
   });

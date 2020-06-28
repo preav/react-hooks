@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Timer from "./components/timer";
+import Data from "./components/datafetch";
 import "./App.css";
 
 function App() {
@@ -7,7 +8,6 @@ function App() {
   const [name, setName] = useState("");
 
   useEffect(() => {
-    console.log("render");
     document.title = `You clicked ${counter} times`;
   }, [counter]);
 
@@ -21,6 +21,7 @@ function App() {
       />
       <button onClick={(e) => setCounter((item) => item + 1)}>Click me</button>
       <Timer />
+      <Data />
     </div>
   );
 }
@@ -38,3 +39,4 @@ export default App;
 //     - if we pass empty array, it will render only once which is  similar to componentdidmount
 //   - Cleanup
 //     - return another function which will resemble to componentwillunmount
+//    - API fetching using useeffect and control its render
