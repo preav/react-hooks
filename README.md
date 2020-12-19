@@ -10,5 +10,7 @@
     - How to optimise code at every render(componentdidmount and componentdidupdate).
     - How to cleanup code(componentwillunmount).
     - How to fetch data from API inside useEffect and control next renders
+- useContext
+  - Description - used to pass data via ContextAPI
 
 Note: Each Branch describes different Hook
