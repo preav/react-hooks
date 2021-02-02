@@ -12,5 +12,7 @@
     - How to fetch data from API inside useEffect and control next renders
 - useContext
   - Description - used to pass data via ContextAPI
+- useReducer
+  - Description - used for stateManagement, similar to reducer in redux
 
 Note: Each Branch describes different Hook
